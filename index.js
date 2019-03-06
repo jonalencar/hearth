@@ -11,3 +11,5 @@ app.use('/', (req, res) => {
 app.use((req, res) => {
 	res.status(404).send(`<h2>Don't panic!</h2><p>Sorry, ${req.url} cannot be found most likely due to the website author's idiocy</p>`);
 });
+
+app.listen(443, () => console.log("The server is up and running..."));
